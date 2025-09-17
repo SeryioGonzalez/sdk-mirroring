@@ -9,7 +9,8 @@ class AzureChatCompletion(_SKAzureChatCompletion):
     # Example: attach a simple hook or default param
     def __init__(self, *args, **kwargs):
         # You can inject defaults (e.g., telemetry or retries) here
-        print("I am a cloned SDK connector class!")
+        text= "I am a cloned SDK connector class! "
+        print(f"\033[31m{text}\033[0m")
         super().__init__(*args, **kwargs)
 
 

@@ -12,14 +12,12 @@ USER_INPUT = "In which contenent is Korea?"
 
 async def main():
     # 1. Create the agent by specifying the service
-    print("Creating the agent...")
+    print("Creating the Semantic Kernel agent...")
     agent = ChatCompletionAgent(
         service=AzureChatCompletion(credential=AzureCliCredential()),
         name="demo-agent",
         instructions="Answer questions about the world in one sentence.",
     )
-
-    print("Starting conversation with the agent...")
 
     print(f"# User: {USER_INPUT}")
     # 2. Invoke the agent for a response
